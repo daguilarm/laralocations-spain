@@ -60,7 +60,7 @@ El paquete crea cuatro tablas en tu base de datos:
 
 Este paquete está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
-## Datos
+## Datos
 
 Los datos incluidos en este paquete provienen de fuentes oficiales del gobierno de España, incluyendo el INE (Instituto Nacional de Estadística). Se ha realizado un esfuerzo para asegurar la precisión y actualidad de los datos. Si encuentras alguna discrepancia, por favor, infórmalo para que pueda ser corregida.
 
