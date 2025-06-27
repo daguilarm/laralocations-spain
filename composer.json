@@ -3,7 +3,7 @@
     "description": "Paquete de Laravel con datos de países, CCAA, provincias y municipios de España.",
     "type": "package",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Damián Aguilar",
