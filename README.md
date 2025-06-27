@@ -20,30 +20,39 @@ composer require daguilarm/laralocations-spain
 
 El paquete incluye un Service Provider que se auto-detecta en Laravel. No es necesario añadirlo manualmente.
 
-Después de la instalación, debes publicar las migraciones y los seeders:
+Después de la instalación, debes publicar las migraciones y el archivo de datos de municipios:
 
 ```bash
-php artisan vendor:publish --tag=laralocations-spain
+php artisan vendor:publish --provider="Daguilarm\LaralocationsSpain\LaralocationsSpainServiceProvider" --tag="laralocations-spain"
 ```
 
 Esto copiará los archivos de migración y seeders a tus directorios database/migrations y database/seeders respectivamente.
 
 ## Migraciones y Seeders
 
+Primero añade los seeders a tu DatabaseSeeder.php:
+
+```php 
+// Seeders del paquete \Daguilarm\LaralocationsSpain
+CountrySeeder::class,
+StateSeeder::class,
+ProvinceSeeder::class,
+MunicipalitySeeder::class,
+```
+
 Para crear las tablas en tu base de datos y poblarlas con los datos, ejecuta:
 
 ```bash
-php artisan migrate
-php artisan db:seed --class=LaralocationsSpainSeeder
+php artisan migrate --seed
 ```
 
-El LaralocationsSpainSeeder ejecutará a su vez otros seeders para cada nivel administrativo. Si deseas ejecutar seeders individuales:
+Yo personalmente uso (se prudente al usarlo...):
 
-- Para CCAA: `php artisan db:seed --class=CommunitySeeder`
-- Para Provincias: `php artisan db:seed --class=ProvinceSeeder`
-- Para Municipios: `php artisan db:seed --class=MunicipalitySeeder`
+```bash
+php artisan migrate:refresh --seed
+```
 
-Nota: El seeder de municipios puede tardar bastante tiempo en completarse debido a la gran cantidad de datos.
+Nota: El seeder de municipios puede tardar algunos segundos más en completarse, debido a la gran cantidad de datos.
 
 ## Uso
 

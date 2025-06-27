@@ -2,12 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Daguilarm\LaralocationsSpain\Database\Seeders;
+namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
+/**
+ * Seeder for the municipalities table.
+ * 
+ * @Package: Daguilarm/LaralocationsSpain
+ * @File: Daguilarm/LaralocationsSpain/database/seeders/MunicipalitySeeder.php
+ * @author Damián Aguilar - damian.aguilarm@gmail.com
+ * @version 1.0.1
+ * @since 1.0.0
+ */
 class MunicipalitySeeder extends Seeder
 {
     public function run(): void

@@ -6,6 +6,15 @@ namespace Daguilarm\LaralocationsSpain;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Laravel package for Spanish locations.
+ * 
+ * @Package: Daguilarm/LaralocationsSpain
+ * @File: Daguilarm/LaralocationsSpain/src/LaralocationsSpainServiceProvider.php
+ * @author Damián Aguilar - damian.aguilarm@gmail.com
+ * @version 1.0.1
+ * @since 1.0.0
+ */
 class LaralocationsSpainServiceProvider extends ServiceProvider
 {
     public function register(): void
@@ -15,19 +24,22 @@ class LaralocationsSpainServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        // 1. Publicar migraciones
+        // Ruta base del paquete (src/../)
+        $packageBase = dirname(__DIR__);
+
+        // Publicar migraciones
         $this->publishes([
-            __DIR__.'/../database/migrations' => database_path('migrations'),
+            $packageBase . '/database/migrations' => database_path('migrations'),
         ], 'laralocations-spain');
 
-        // 2. Publicar seeders
+        // Publicar seeders
         $this->publishes([
-            __DIR__.'/../database/seeders' => database_path('seeders'),
+            $packageBase . '/database/seeders' => database_path('seeders'),
         ], 'laralocations-spain');
 
-        // 3. Publicar archivos de datos
+        // Publicar archivos de datos
         $this->publishes([
-            __DIR__.'/../database/data' => database_path('data'),
-        ], 'laralocations-spain-data');
+            $packageBase . '/database/data' => database_path('data'),
+        ], 'laralocations-spain');
     }
 }
