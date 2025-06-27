@@ -4,7 +4,7 @@ Este paquete de Laravel proporciona una base de datos completa de las divisiones
 
 * **Comunidades Autónomas (CCAA):** Las 17 comunidades autónomas de España.
 * **Provincias:** Las 50 provincias de España.
-* **Municipios:** Los municipios de cada provincia.
+* **Municipios:** Los municipios de cada provincia (8112 municipios en total).
 
 ## Instalación
 
