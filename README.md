@@ -68,5 +68,5 @@ Los datos incluidos en este paquete provienen de fuentes oficiales del gobierno 
 > Estos datos fueron recopilados 2017 años para un proyecto universitario, y por tanto, al recopilarse a mano seguramente estaban llenos de errores (no había IA por aquel entonces que hicieran estas cosas...). Para actualizarlos, he utilizado Google Gemini para que los validase y buscara errores, utilizando la base de datos del INE para la comprobación. El resultado han sido 19 errores en entre los más de 8100 municipios que hay en la base de datos. 
 
 > [!IMPORTANT] 
-> En cualquier caso, seguramente se encontrarán más errores o discrepancias, por lo que estaría bien abrir un "issue" o envíar un "pull request" al repositorio, y colaborar con el proyecto.
+> En cualquier caso, seguramente se encontrarán más errores o discrepancias, por lo que estaría bien abrir un "issue" o envíar un "pull request" al repositorio, y colaborar con el proyecto. Muchas gracias.
 
