@@ -62,5 +62,10 @@ Este paquete está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE 
 
 ## Datos
 
-Los datos incluidos en este paquete provienen de fuentes oficiales del gobierno de España, incluyendo el INE (Instituto Nacional de Estadística). Se ha realizado un esfuerzo para asegurar la precisión y actualidad de los datos. Si encuentras alguna discrepancia, por favor, infórmalo para que pueda ser corregida.
+Los datos incluidos en este paquete provienen de fuentes oficiales del gobierno de España, incluyendo el INE (Instituto Nacional de Estadística). 
+
+> [!NOTE] 
+> Estos datos fueron recopilados 2017 años para un proyecto universitario, y por tanto, al recopilarse a mano seguramente estaban llenos de errores (no había IA por aquel entonces que hicieran estas cosas...). Para actualizarlos, he utilizado Google Gemini para que los compruebe y busque errores, mientras conultaba al INE. El resultado ha sido 19 errores en los más de 80100 municipios. 
+
+> En cualquier caso, seguramente se encontrarán más errores o discrepancias, por lo que estaría bien abrir un "issue" o envíar un "pull request" al repositorio, y colaborar con el proyecto.
 
