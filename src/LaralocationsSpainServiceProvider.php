@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Daguilarm\LaralocationsSpain;
 
+use Daguilarm\LaralocationsSpain\Console\Commands\LocationsVerifyData;
+use Daguilarm\LaralocationsSpain\Console\Commands\LocationsMergeData;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -24,6 +26,13 @@ class LaralocationsSpainServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                LocationsVerifyData::class,
+                LocationsMergeData::class,
+            ]);
+        }
+
         // Ruta base del paquete (src/../)
         $packageBase = dirname(__DIR__);
 

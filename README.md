@@ -4,7 +4,7 @@ Este paquete de Laravel proporciona una base de datos completa de las divisiones
 
 * **Comunidades Autónomas (CCAA):** Las 17 comunidades autónomas de España.
 * **Provincias:** Las 50 provincias de España.
-* **Municipios:** Los municipios de cada provincia (8112 municipios en total).
+* **Municipios:** Los municipios de cada provincia (8132 municipios en total). **Actualizado a 29 Julio de 2025**.
 * **Ceuta** y **Melilla**, usando el formato del INE, asingados tanto a Provincia como a Municipio.
 
 
@@ -76,7 +76,7 @@ Este paquete está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE 
 Los datos incluidos en este paquete provienen de fuentes oficiales del gobierno de España, incluyendo el INE (Instituto Nacional de Estadística). 
 
 > [!NOTE] 
-> Estos datos fueron recopilados 2017 años para un proyecto universitario, y por tanto, al recopilarse a mano seguramente estaban llenos de errores (no había IA por aquel entonces que hicieran estas cosas...). Para actualizarlos, he utilizado Google Gemini para que los validase y buscara errores, utilizando la base de datos del INE para la comprobación. El resultado han sido 19 errores en entre los más de 8100 municipios que hay en la base de datos. 
+> Estos datos fueron recopilados 2017 años para un proyecto universitario, y por tanto, al recopilarse a mano seguramente estaban llenos de errores (no había IA por aquel entonces que hicieran estas cosas...). Para actualizarlos, he utilizado Google Gemini para que los validase y buscara errores, utilizando la base de datos del INE para la comprobación. 
 
 > [!IMPORTANT] 
 > En cualquier caso, seguramente se encontrarán más errores o discrepancias, por lo que estaría bien abrir un "issue" o envíar un "pull request" al repositorio, y colaborar con el proyecto. Muchas gracias.
